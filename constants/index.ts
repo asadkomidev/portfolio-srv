@@ -31,31 +31,33 @@ export const socialLinks = [
 export const projects = [
   {
     name: "finance tracker",
-    url: "/projects/finance-tracker",
     description:
       "A tool that can help you manage your finances more efficiently.",
-    link: "/projects/finance-tracker",
+    sourceCode: "https://github.com/asadkom/finance-tracker",
+    liveDemo: "https://finance-tracker-asadkom.vercel.app/",
   },
   {
     name: "personal website",
-    url: "/projects/personal-website",
     description: "A personal website to showcase my projects and thoughts.",
-    link: "/projects/personal-website",
+    sourceCode: undefined,
+    liveDemo: "https://asadkom.com",
   },
 ] as const;
 
 export const currentFocus = [
   {
-    title: ".email agent",
+    name: ".email agent",
     description:
       "Building a tool that can help you manage your email inbox more efficiently.",
-    link: "/current/email-agent",
+    sourceCode: undefined,
+    liveDemo: "/",
   },
   {
-    title: ".personal website",
+    name: ".personal website",
     description:
       "Building a personal website to showcase my projects and thoughts.",
-    link: "/current/personal-website",
+    sourceCode: undefined,
+    liveDemo: "/",
   },
 ] as const;
 
