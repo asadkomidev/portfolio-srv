@@ -30,11 +30,11 @@ export const socialLinks = [
 
 export const projects = [
   {
-    name: "finance tracker",
+    name: "FFmpeg Video Compressor",
     description:
-      "A tool that can help you manage your finances more efficiently.",
-    sourceCode: "https://github.com/asadkom/finance-tracker",
-    liveDemo: "https://finance-tracker-asadkom.vercel.app/",
+      "A tool that can help you compress your videos more efficiently.",
+    sourceCode: "https://github.com/asadkomidev/video-compressor",
+    liveDemo: "https://video-compressor-alpha.vercel.app/",
   },
   {
     name: "personal website",
