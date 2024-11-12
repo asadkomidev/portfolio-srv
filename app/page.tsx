@@ -13,7 +13,7 @@ export default function Home() {
         <Section className="flex flex-col w-full  ">
           <HeaderWrapper />
         </Section>
-        <Section className="flex flex-col  w-full min-h-24  pb-24 flex-1">
+        <Section className="flex flex-col  w-full min-h-24  flex-1">
           <ScrollArea className="h-full">
             <Description />
             <CurrentFocus />
