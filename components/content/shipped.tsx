@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { shippedProjects } from "@/constants";
-import { Title } from "./title";
-import { Item } from "./item";
+import { Title } from "../ui/title";
+import { Item } from "../ui/item";
 
 export const Shipped: FC = () => {
   return (

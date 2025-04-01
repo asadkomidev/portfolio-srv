@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { projects } from "@/constants";
-import { Title } from "./title";
-import { Item } from "./item";
+import { Title } from "../ui/title";
+import { Item } from "../ui/item";
 
-export const Projects: FC = () => {
+export const Sides: FC = () => {
   return (
     <div className="flex flex-col gap-2 w-full">
       <Title title="_Sides" emoji="🗂️" />

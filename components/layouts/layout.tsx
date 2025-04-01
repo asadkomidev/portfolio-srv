@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
 import { FC, ReactNode } from "react";
 
-export const Main: FC<{ children: ReactNode }> = ({ children }) => {
+export const Main: FC<{ children: ReactNode; className?: string }> = ({
+  children,
+  className,
+}) => {
   return (
-    <main
-      className={cn(
-        "container mx-auto max-w-screen-sm fixed top-0 left-0 right-0 bottom-0 p-4"
-      )}>
+    <main className={cn("container mx-auto max-w-screen-sm  p-4", className)}>
       {children}
     </main>
   );

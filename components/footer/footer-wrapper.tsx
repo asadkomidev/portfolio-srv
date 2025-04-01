@@ -6,9 +6,9 @@ import { ThemeToggleFooter } from "./theme-toggle";
 
 export const FooterWrapper: FC = () => {
   return (
-    <div className="flex  items-center justify-between w-full border-t py-1">
+    <footer className="flex px-4 items-center justify-between container mx-auto max-w-screen-sm  border-t-[0.5px]  border-muted-foreground/20 py-2">
       <Socials />
       <ThemeToggleFooter />
-    </div>
+    </footer>
   );
 };

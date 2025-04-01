@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 import { GeistSans } from "geist/font/sans";
+import { FooterWrapper } from "@/components/footer/footer-wrapper";
 
 export const metadata: Metadata = {
   title: "Asad Komi",
@@ -25,7 +27,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="min-h-screen">{children}</div>
+          <Analytics />
+          <FooterWrapper />
         </ThemeProvider>
       </body>
     </html>

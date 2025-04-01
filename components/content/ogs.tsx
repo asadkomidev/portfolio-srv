@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { archivedProjects } from "@/constants";
-import { Item } from "./item";
-import { Title } from "./title";
+import { Item } from "../ui/item";
+import { Title } from "../ui/title";
 
-export const Archives: FC = () => {
+export const Ogs: FC = () => {
   return (
     <div className="flex flex-col gap-2 w-full">
       <Title
