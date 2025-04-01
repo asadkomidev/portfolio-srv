@@ -30,36 +30,46 @@ export const socialLinks = [
 
 export const projects = [
   {
-    name: "FFmpeg Video Compressor",
+    name: "Jefto - Project Management Tool",
     description:
-      "A tool that can help you compress your videos more efficiently.",
-    sourceCode: "https://github.com/asadkomidev/video-compressor",
-    liveDemo: "https://video-compressor-alpha.vercel.app/",
+      "A project management tool to help you manage your projects. Includes features like task management, time tracking, and workspace management.",
+    sourceCode: undefined,
+    liveDemo: "https://jefto.io",
   },
   {
-    name: "personal website",
-    description: "A personal website to showcase my projects and thoughts.",
-    sourceCode: undefined,
-    liveDemo: "https://asadkom.com",
+    name: "TCN - SaaS Starter Kit",
+    description:
+      "A SaaS starter kit, built with Turborepo, Convex, Next.js, Polar, Resend, Shadcn UI, TypeScript, and Tailwind CSS.",
+    sourceCode: "https://github.com/asadkomidev/turbo-convex-starter",
+    liveDemo: "https://turbo-convex-starter-web.vercel.app/",
+  },
+  {
+    name: "FFVideo - Video Compressor",
+    description:
+      "A tool that can help you compress your videos more efficiently. Built with FFmpeg, Next.js, TypeScript, and Tailwind CSS.",
+    sourceCode: "https://github.com/asadkomidev/video-compressor",
+    liveDemo: "https://video-compressor-alpha.vercel.app/",
   },
 ] as const;
 
 export const currentFocus = [
   {
-    name: ".email agent",
+    name: "Debux - Error Reporter",
     description:
-      "Building a tool that can help you manage your email inbox more efficiently.",
-    sourceCode: undefined,
-    liveDemo: "/",
-  },
-  {
-    name: ".personal website",
-    description:
-      "Building a personal website to showcase my projects and thoughts.",
+      "A tool that can help you report, track, and debug errors more efficiently.",
     sourceCode: undefined,
     liveDemo: "/",
   },
 ] as const;
 
+export const archivedProjects = [
+  {
+    name: "Portfolio - Old",
+    description: "A personal website to showcase my projects and thoughts.",
+    sourceCode: "https://github.com/asadkomidev/protfolio",
+    liveDemo: "https://protfolio-one-steel.vercel.app/",
+  },
+] as const;
+
 export const description =
-  "Building beautiful and functional web applications with modern technologies.";
+  "Dedicated to transforming complex challenges into elegant software solutions. Expert in diverse technologies, driven by innovation.";

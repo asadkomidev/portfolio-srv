@@ -1,6 +1,7 @@
 import { CurrentFocus } from "@/components/content/current-focus";
 import { Description } from "@/components/content/description";
 import { Projects } from "@/components/content/projects";
+import { Archives } from "@/components/content/archives";
 import { FooterWrapper } from "@/components/footer/footer-wrapper";
 import { HeaderWrapper } from "@/components/header/header-wrapper";
 import { Container, Main, Section } from "@/components/layouts/layout";
@@ -18,6 +19,7 @@ export default function Home() {
             <Description />
             <CurrentFocus />
             <Projects />
+            <Archives />
             <ScrollBar orientation="vertical" />
           </ScrollArea>
         </Section>

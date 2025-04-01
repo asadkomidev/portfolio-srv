@@ -9,7 +9,7 @@ export const Projects: FC = () => {
         {" "}
         <span className="text-muted-foreground text-sm">&gt;&gt;</span> projects
       </h2>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 ml-6 lg:ml-12">
         {projects.map((project) => (
           <Item key={project.name} {...project} />
         ))}
