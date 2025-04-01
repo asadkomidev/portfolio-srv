@@ -1,11 +1,11 @@
 import { CurrentFocus } from "@/components/content/current-focus";
 import { Description } from "@/components/content/description";
 import { Projects } from "@/components/content/projects";
+import { Shipped } from "@/components/content/shipped";
 import { Archives } from "@/components/content/archives";
 import { FooterWrapper } from "@/components/footer/footer-wrapper";
 import { HeaderWrapper } from "@/components/header/header-wrapper";
 import { Container, Main, Section } from "@/components/layouts/layout";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 export default function Home() {
   return (
@@ -14,14 +14,14 @@ export default function Home() {
         <Section className="flex flex-col w-full  ">
           <HeaderWrapper />
         </Section>
-        <Section className="flex flex-col  w-full min-h-24  flex-1">
-          <ScrollArea className="h-full">
+        <Section className="flex flex-col overflow-hidden  w-full min-h-24  flex-1">
+          <div className="h-full overflow-y-auto space-y-12">
             <Description />
             <CurrentFocus />
+            <Shipped />
             <Projects />
             <Archives />
-            <ScrollBar orientation="vertical" />
-          </ScrollArea>
+          </div>
         </Section>
 
         <Section className="flex flex-col   justify-end w-full">

@@ -1,14 +1,14 @@
 import { FC } from "react";
-import { projects } from "@/constants";
+import { shippedProjects } from "@/constants";
 import { Title } from "./title";
 import { Item } from "./item";
 
-export const Projects: FC = () => {
+export const Shipped: FC = () => {
   return (
     <div className="flex flex-col gap-2 w-full">
-      <Title title="_Sides" emoji="🗂️" />
+      <Title title="_Shipped" emoji="🚀" />
       <div className="flex flex-col gap-4 ml-6 lg:ml-12">
-        {projects.map((project) => (
+        {shippedProjects.map((project) => (
           <Item key={project.name} {...project} />
         ))}
       </div>

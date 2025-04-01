@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import { Source } from "./source";
-import { ArchiveX, Globe } from "lucide-react";
+import { Website } from "./website";
 import { cn } from "@/lib/utils";
 
 export const Item: FC<{
@@ -12,31 +12,40 @@ export const Item: FC<{
   archived?: boolean;
 }> = ({ name, sourceCode, liveDemo, description, archived }) => {
   return (
-    <div className="flex flex-col border-b pb-4">
+    <div className="flex flex-col border-b-[0.2px] border-muted-foreground/20 pb-4">
       <div className="w-full  cursor-pointer flex items-center justify-between gap-2">
         <Link
           target="_blank"
           href={liveDemo || ""}
-          className="hover:underline font-normal flex items-center gap-2"
+          className="hover:underline flex items-center gap-2"
         >
           <div
             className={cn(
-              "flex items-center gap-2 text-base font-semibold",
-              archived && "text-muted-foreground line-through"
+              "flex items-center gap-2 text-sm font-medium dark:text-primary",
+              archived &&
+                "text-muted-foreground decoration-muted-foreground/50 dark:decoration-primary line-through decoration-2"
             )}
           >
-            {archived ? (
+            {/* {archived ? (
               <ArchiveX className="size-4" />
             ) : (
-              <Globe className="size-4" />
-            )}
+              <LinkIcon className="size-4" />
+            )} */}
             {name}
           </div>
         </Link>
-        {sourceCode && <Source sourceCode={sourceCode} />}
+        <div className="flex items-center gap-x-2">
+          {sourceCode && <Source sourceCode={sourceCode} />}
+          {liveDemo && <Website website={liveDemo} />}
+        </div>
       </div>
 
-      <p className="text-muted-foreground max-w-lg text-sm mt-2">
+      <p
+        className={cn(
+          "text-muted-foreground/70 max-w-lg text-sm mt-1",
+          archived && "decoration-muted-foreground/50 line-through decoration-1"
+        )}
+      >
         {description}
       </p>
     </div>
