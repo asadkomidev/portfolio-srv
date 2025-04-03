@@ -9,7 +9,7 @@ import { Container, Main, Section } from "@/components/layouts/layout";
 export default function Home() {
   return (
     <Main>
-      <Container className="flex flex-col items-center w-full h-full ">
+      <Container className="flex flex-col items-center w-full h-full pb-32 ">
         <Section className="flex flex-col w-full  ">
           <HeaderWrapper />
         </Section>

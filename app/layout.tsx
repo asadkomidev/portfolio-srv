@@ -27,7 +27,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen">{children}</div>
+          <div className="min-h-screen ">{children}</div>
           <Analytics />
           <FooterWrapper />
         </ThemeProvider>
