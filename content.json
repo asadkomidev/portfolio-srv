@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Jefto - Project Management Tool",
+    "description": "_A project management tool to help you manage your projects. Includes features like task management, time tracking, and workspace management.",
+    "sourceCode": "",
+    "liveDemo": "https://jefto.io",
+    "type": "shipped"
+  },
+  {
+    "name": "TCN - SaaS Starter Kit",
+    "description": "_A SaaS starter kit, built with Turborepo, Convex, Next.js, Polar, Resend, Shadcn UI, TypeScript, and Tailwind CSS.",
+    "sourceCode": "https://github.com/asadkomidev/turbo-convex-starter",
+    "liveDemo": "https://turbo-convex-starter-web.vercel.app/",
+    "type": "shipped"
+  },
+  {
+    "name": "Finvista - Budget Tracker",
+    "description": "_A budget tracker, that can help you manage your budget more efficiently.",
+    "sourceCode": "",
+    "liveDemo": "https://finance-pi-murex.vercel.app//",
+    "type": "sides"
+  },
+  {
+    "name": "FFVideo - Video Compressor",
+    "description": "_A tool that can help you compress your videos more efficiently. Built with FFmpeg, Next.js, TypeScript, and Tailwind CSS.",
+    "sourceCode": "https://github.com/asadkomidev/video-compressor",
+    "liveDemo": "https://video-compressor-alpha.vercel.app/",
+    "type": "sides"
+  },
+  {
+    "name": "Debux - Error Reporter",
+    "description": "_A tool that can help you report, track, and debug errors more efficiently.",
+    "sourceCode": "",
+    "liveDemo": "https://debux.dev/",
+    "type": "cooking"
+  },
+  {
+    "name": "Portfolio - Old",
+    "description": "_A personal website to showcase my projects and thoughts.",
+    "sourceCode": "https://github.com/asadkomidev/protfolio",
+    "liveDemo": "https://protfolio-one-steel.vercel.app/",
+    "type": "archived"
+  }
+]
