@@ -3,13 +3,13 @@ import { query } from "./_generated/server";
 export const projects = query({
   args: {},
   handler: async (ctx) => {
-    const projects = await ctx.db.query("projects").collect();
+    const projects = await ctx.db.query("projects").order("desc").collect();
     if (projects.length === 0) {
       return {
         cooking: [],
         shipped: [],
         sides: [],
-        archived: []
+        archived: [],
       };
     }
     const cooking = projects.filter((project) => project.type === "cooking");
