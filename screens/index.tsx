@@ -24,6 +24,7 @@ export const HomeScreen = () => {
         <Section className="flex flex-col overflow-hidden  w-full min-h-24 ">
           <div className="h-full overflow-y-auto space-y-12">
             <Description />
+
             <ProjectsSection
               title="_Cooking"
               emoji="♨️"

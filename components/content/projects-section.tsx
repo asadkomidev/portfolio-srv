@@ -21,7 +21,7 @@ export const ProjectsSection: FC<ProjectsSectionProps> = ({
   skeletonCount = 2,
 }) => {
   return (
-    <div className="flex flex-col gap-2 w-full">
+    <div className="flex flex-col gap-2 w-full pb-12">
       <Title title={title} emoji={emoji} className={className} />
       <div className="flex flex-col gap-4 ml-6 lg:ml-12">
         {isLoading ? (
